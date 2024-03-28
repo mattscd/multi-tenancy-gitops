@@ -52,6 +52,9 @@ resources:
   #- argocd/machinesets.yaml
   - argocd/namespace-sealed-secrets.yaml
   - argocd/daemonset-sync-global-pullsecret.yaml
+  - argocd/namespace-connect-direct.yaml
+  - argocd/serviceaccounts-connect-direct.yaml
+  - argocd/sterling-cd-clusterwide.yaml
 patches:
   - target:
       group: argoproj.io
